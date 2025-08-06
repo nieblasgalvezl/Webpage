@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <h1>MiPortafolio</h1>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Bienvenido a mi página</h1>
-        <p>Hecha con HTML, CSS y JavaScript</p>
+        <h2>Hola, soy <span class="highlight">Luis</span></h2>
+        <p>Analista de Datos | Ingeniero Industrial | Desarrollador Python</p>
+        <button onclick="scrollToSection('projects')">Ver Proyectos</button>
     </header>
 
-    <main>
-        <button onclick="mostrarMensaje()">Haz clic aquí</button>
-        <p id="mensaje"></p>
-    </main>
+    <section id="about">
+        <h3>Sobre mí</h3>
+        <p>Apasionado por la optimización de procesos, el análisis de datos y el desarrollo de soluciones tecnológicas con Python.</p>
+    </section>
+
+    <section id="projects">
+        <h3>Proyectos Destacados</h3>
+        <div class="card">
+            <h4>📊 Dashboard de Datos</h4>
+            <p>Dashboard interactivo para análisis de ventas en tiempo real usando Python y Plotly.</p>
+        </div>
+        <div class="card">
+            <h4>🤖 Automatización QA</h4>
+            <p>Herramienta que analiza llamadas de soporte usando IA para detectar oportunidades de mejora.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Contacto</h3>
+        <p>📧 luis@example.com</p>
+        <p>💼 <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+        <p>📂 <a href="https://github.com" target="_blank">GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Luis | Desarrollado con ❤️ y código</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
