@@ -1,3 +1,3 @@
-function mostrarMensaje() {
-    document.getElementById("mensaje").innerText = "¡Hola desde JavaScript!";
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
